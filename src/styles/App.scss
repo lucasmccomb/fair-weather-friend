@@ -1,0 +1,155 @@
+@import-normalize;
+
+.fwf {
+  &__main {
+    text-align: left;
+    max-width: 40rem;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    color: black;
+  }
+
+  &__header--icon {
+    margin: 0 0.5rem 0.5rem 0.5rem;
+    &:first-of-type {
+      margin-right: 1rem;
+    }
+  }
+
+  &__hr {
+    background-color: darkgray;
+    margin: 0 auto 2rem auto;
+    width: 20rem;
+  }
+
+  &__location-input--separator {
+    margin: 1rem 0;
+  }
+
+  &__loader--icon {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    transition: 0.5s opacity ease-out, 0.5s width ease-out, 0.5s height ease-out;
+    &.spinning {
+      animation: loader-icon-spin infinite 2s linear;
+      transition: 0.5s opacity ease-in, 0.5s width ease-in, 0.5s height ease-in;
+      width: 6rem;
+      height: 6rem;
+      opacity: 1;
+    }
+  }
+
+  &__location-label--wrap {
+    margin: 1rem 0;
+  }
+
+  &__location-label--icon {
+    margin: 0.4rem 0.4rem 0 0;
+  }
+
+  &__card {
+    margin-bottom: 1rem;
+    .card-body {
+      padding: 0.75rem;
+    }
+  }
+
+  &__img--wrap {
+    background: linear-gradient(
+      65deg,
+      rgba(76, 101, 242, 0.5),
+      rgba(218, 88, 185, 0.5)
+    );
+    border-radius: 10rem;
+    filter: contrast(110%);
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    &-lg {
+      max-width: 6.6rem;
+    }
+    &-sm {
+      max-width: 3.3rem;
+    }
+  }
+
+  &__currentWeatherCard--list {
+    list-style: none;
+    padding-inline-start: 1rem;
+  }
+
+  &__forecast--days-wrap {
+    display: flex;
+  }
+
+  &__forecast--day-detail-wrap {
+    border-right: 0.1rem solid lightgray;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    font-size: 0.65rem;
+    padding: 0.5rem;
+    text-align: center;
+    &:first-of-type {
+      padding-left: 0;
+    }
+    &:last-of-type {
+      border-right: none;
+    }
+    @media (min-width: 40rem) {
+      font-size: 0.8rem;
+    }
+  }
+
+  &__forecast--day-detail-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-inline-start: 0;
+  }
+
+  &__forecast--day-li {
+    display: flex;
+    flex: 1;
+    flex-basis: 2rem;
+    justify-content: center;
+    margin-top: 1rem;
+    @media (min-width: 40rem) {
+      flex-basis: 2.5rem;
+    }
+  }
+
+  &__forecast-card--warn {
+    font-size: 0.8rem;
+  }
+
+  &__Footer--wrap {
+    margin: 1.5rem 0;
+  }
+
+  &__Footer {
+    font-size: 0.8rem;
+    color: #6d6c6c;
+    text-align: center;
+  }
+
+  &__Footer--p {
+    margin-bottom: 0.2rem;
+  }
+}
+
+@keyframes loader-icon-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
