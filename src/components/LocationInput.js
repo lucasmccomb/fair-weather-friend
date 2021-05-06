@@ -85,7 +85,7 @@ export function LocationInput() {
 
             <button
               onClick={handleSubmitLocationInput}
-              className="btn btn-outline-secondary"
+              className="btn btn-outline-secondary fwf__btn--zip-submit"
               type="button"
               id="fairWeatherFriendZipCodeInput_btn"
             >

@@ -1,5 +1,11 @@
 @import-normalize;
 
+$blueToFusciaGradient: linear-gradient(
+  65deg,
+  rgba(76, 101, 242, 0.5),
+  rgba(218, 88, 185, 0.5)
+);
+
 .fwf {
   &__main {
     text-align: left;
@@ -40,8 +46,8 @@
     &.spinning {
       animation: loader-icon-spin infinite 2s linear;
       transition: 0.5s opacity ease-in, 0.5s width ease-in, 0.5s height ease-in;
-      width: 6rem;
-      height: 6rem;
+      width: 4rem;
+      height: 4rem;
       opacity: 1;
     }
   }
@@ -62,18 +68,14 @@
   }
 
   &__img--wrap {
-    background: linear-gradient(
-      65deg,
-      rgba(76, 101, 242, 0.5),
-      rgba(218, 88, 185, 0.5)
-    );
+    background: $blueToFusciaGradient;
     border-radius: 10rem;
     filter: contrast(110%);
     display: flex;
     justify-content: center;
     margin: 0 auto;
     &-lg {
-      max-width: 6.6rem;
+      max-width: 6.3rem;
     }
     &-sm {
       max-width: 3.3rem;
