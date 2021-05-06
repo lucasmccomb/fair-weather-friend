@@ -16,9 +16,14 @@ To run app locally:
 8. Navigate to `http://localhost:3000/` in your browser
 9. Click on `use current location` or enter a zip code to get weather information
 
-### To do's:
+To run tests:
 
-- Add tests
-- Code cleanup
+1. Follow steps 1-6 for running the app locally
+2. Run `npm test` in terminal
+3. See output
+
+### To do:
+
+- Improve tests
 - Add ability to interpret city name
 - Add hourly forecast

@@ -37,10 +37,6 @@ export const fetchCurrentWeatherByZip = (zipCode) => {
   return async (dispatch, getState) => {
     try {
       const openWeatherResponse = await fetchWeatherByZip(zipCode);
-      console.log(
-        `OPEN WEATHER RESPONSE FOR ${zipCode} 🌦 `,
-        openWeatherResponse.data
-      );
       const weatherObj = parseCurrentWeatherResponse(openWeatherResponse.data);
       dispatch(setWeatherValues(weatherObj));
       dispatch(setLocation(weatherObj.location_name));
@@ -55,10 +51,6 @@ export const fetchCurrentWeatherByCoords = (lat, lon) => {
   return async (dispatch, getState) => {
     try {
       const openWeatherResponse = await fetchWeatherByCoords(lat, lon);
-      console.log(
-        `OPEN WEATHER RESPONSE FOR ${lat} ${lon} 🌦 `,
-        openWeatherResponse.data
-      );
       const weatherObj = parseCurrentWeatherResponse(openWeatherResponse.data);
       dispatch(setWeatherValues(weatherObj));
       dispatch(setLocation(weatherObj.location_name));

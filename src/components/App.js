@@ -1,11 +1,11 @@
 import "../styles/App.scss";
+import CurrentWeatherCard from "./CurrentWeatherCard";
+import Footer from "./Footer";
+import ForecastCard from "./ForecastCard";
 import Header from "./Header";
 import LocationInput from "./LocationInput";
-import Loader from "./Loader";
 import LocationLabel from "./LocationLabel";
-import CurrentWeatherCard from "./CurrentWeatherCard";
-import ForecastCard from "./ForecastCard";
-import Footer from "./Footer";
+import Loader from "./Loader";
 
 function App() {
   return (

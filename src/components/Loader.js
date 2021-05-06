@@ -9,10 +9,7 @@ export function Loader() {
   return (
     <div className="fwf__loader--wrap">
       <div className="row justify-content-center">
-        <Sun
-          size={64}
-          className={`fwf__loader--icon ${loading ? "spinning" : ""}`}
-        />
+        <Sun className={`fwf__loader--icon ${loading ? "spinning" : ""}`} />
       </div>
     </div>
   );
