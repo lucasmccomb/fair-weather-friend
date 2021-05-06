@@ -1,8 +1,8 @@
 # Fair Weather Friend
 
-A basic location-based weather app created by Lucas McComb.
+A location-based weather app build with React using the free OpenWeather API for meteorological data. Try it out here: <a href="https://fairweatherfriend.live"  target="_blank">https://fairweatherfriend.live</a>.
 
-To run app locally:
+### To run app locally:
 
 1. Clone the repository & `cd` into `fair-weather-friend` directory.
 2. Run `yarn install`
@@ -16,7 +16,7 @@ To run app locally:
 8. Navigate to `http://localhost:3000/` in your browser
 9. Click on `use current location` or enter a zip code to get weather information
 
-To run tests:
+### To run tests:
 
 1. Follow steps 1-6 for running the app locally
 2. Run `npm test` in terminal
