@@ -2,6 +2,11 @@
 
 A location-based weather app build with React using the free OpenWeather API for meteorological data. Try it out here: <a href="https://fairweatherfriend.live"  target="_blank">https://fairweatherfriend.live</a>.
 
+### Browser support
+- Chrome (macOS desktop & iOS mobile)
+- Safari (macOS desktop only)
+- Firefox (macOS desktop only)
+
 ### To run app locally:
 
 1. Clone the repository & `cd` into `fair-weather-friend` directory.
