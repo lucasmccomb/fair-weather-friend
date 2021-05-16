@@ -39,8 +39,11 @@ export function ForecastCard() {
                     className="fwf__forecast--day-detail-wrap"
                     key={`${day.dt}-day`}
                   >
+                    <p className="fwf__forecast--day-detail-day">
+                      {getDayOfWeek(day.dt)}
+                    </p>
                     <p className="fwf__forecast--day-detail-date">
-                      {getDayOfWeek(day.dt)} {getDate(day.dt)}
+                      {getDate(day.dt)}
                     </p>
                     <div className="fwf__img--wrap fwf__img--wrap-sm">
                       <img

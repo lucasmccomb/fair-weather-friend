@@ -2,10 +2,13 @@
 
 A location-based weather app build with React using the free OpenWeather API for meteorological data. Try it out here: <a href="https://fairweatherfriend.live"  target="_blank">https://fairweatherfriend.live</a>.
 
-### Browser support
-- Chrome (macOS desktop & iOS mobile)
-- Safari (macOS desktop only)
+### Browser support:
+
+- Chrome (macOS desktop & iOS mobile\*)
+- Safari (macOS desktop & iOS mobile\*)
 - Firefox (macOS desktop only)
+
+<sub>\* Ensure that location services are enabled for Chrome or Safari on your iOS device. Go to `Settings > Privacy > Location Services` and select `Safari` or `Chrome` and enable location services by either selecting `Ask Next Time` or `While Using the App`.</sub>
 
 ### To run app locally:
 
@@ -30,5 +33,12 @@ A location-based weather app build with React using the free OpenWeather API for
 ### To do:
 
 - Improve tests
-- Add ability to interpret city name
+- Create build pipeline
+- a11y compliance
+- Containerize using Docker
+- Add ability to use city name for location input
 - Add hourly forecast
+- Dark mode
+- Improve large screen layout
+- Add more animations/transitions
+- Add default location
